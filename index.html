@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formalizador de Sentença</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='lib/require.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <style>
+     .jumbotron {
+        padding: 2rem 2rem;
+     }
+     .formula {
+       font-size: 3rem;
+       font-weight: 300;
+       text-transform: capitalize;
+       letter-spacing: 1rem;
+       height: 400px;
+       overflow-y: auto;
+       overflow-x: hidden;
+     }
+    </style>
+</head>
+<body>     
+      <main role="main">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-4">Formalizador de Sentença</h1>
+            <p>
+              O processo de formalização converte uma sentença ou argumento em uma 
+              forma sentencial, uma estrutura composta de letras sentenciais e operadores lógicos.
+            </p>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+                <form>
+                    <div class="form-group">
+                      <label for="frase">Digite uma sentença</label>
+                      <textarea class="form-control" id="frase" rows="8"></textarea>
+                    </div>
+                  </form>
+            </div>
+            <div class="col-md-6">
+              <div class="formula">
+                <ul id="handerFormulas" class="list-group list-group-flush">
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <hr>
+      
+        </div> <!-- H~P∧∨→↔~⊢ /container -->
+      
+      </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='app.js'></script>
+</body>
+</html>
